@@ -1,0 +1,36 @@
+{
+  "name": "steam_carpet_cleaning",
+  "version": "1.0.0",
+  "description": "Steam Carpet Cleaning Company in Seattle",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css",
+    "convert:hero-webp": "node scripts/convert-hero-webp.js",
+    "convert:gallery-webp": "node scripts/convert-gallery-webp.js",
+    "make:og-cover": "node scripts/make-og-cover.js",
+    "minify:css": "cleancss -o assets/css/style.min.css assets/css/style.css && cleancss -o assets/css/fontawesome.min.css assets/css/fontawesome.css",
+    "minify:js": "terser script.js -o script.min.js && terser isotope.min.js -o isotope.min.js",
+    "optimize:all": "npm run minify:css && npm run minify:js"
+  },
+  "keywords": [
+    "Cleaning",
+    "steam-cleaning",
+    "carpet-cleaning",
+    "steam-carpet-cleaning",
+    "auto-detail",
+    "detail-cleaning"
+  ],
+  "author": "Steam Carpet Cleaning",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "sass": "^1.62.1",
+    "terser": "^5.44.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.2.3",
+    "postcss-cli": "^10.1.0",
+    "sharp": "^0.33.3"
+  }
+}

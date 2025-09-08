@@ -1,0 +1,29 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.menu {
+    background: $blue;
+
+    // @include gradient;
+    // background: linear-gradient(to right, rgba($blue, 0.95), rgba($esmerald, 0.95));
+
+    li{
+        padding: 0 0.5rem;
+        
+    }
+
+    a{
+        text-transform: capitalize;
+        font-weight: 600;
+        color: $white;
+
+    }
+}
+
+.high-bar{
+    height: 40px;
+    top: 55px;
+    padding: 5px;
+    text-align: right;
+}

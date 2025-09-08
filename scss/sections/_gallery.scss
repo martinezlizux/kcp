@@ -1,0 +1,105 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.gallery-section{
+    // @include gradient;
+    background-color: #e9ecef;
+    padding: 0 ;
+    width: 100%;
+    height: 100%;
+
+    button{
+        text-transform: capitalize;
+    }
+
+}
+
+.gallery-box{
+    position: relative;
+    width: 100%;
+    height: 18.5rem;
+    background-color: $white;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-info{
+        background-color: rgba($esmerald, 0.75);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        .caption{
+            text-align: center;
+            @include absoluteCenter;
+            color: $white;
+
+            h4{
+                text-transform: uppercase;
+                display: block;
+            }
+        }
+
+    }
+
+    &:hover{
+
+        img{
+            transform: scale(1.5);
+            @include transitionProperty;
+        }
+        // .gallery-info{
+        //     opacity: 1;
+        //     visibility: visible;
+        //     @include transitionProperty;
+        // }
+    }
+
+}
+
+
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a{
+    color: #fff;
+    background-color: #28bea8;
+}
+
+
+// .projects{
+// 	/*width:100%;*/
+// }
+.projects .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}

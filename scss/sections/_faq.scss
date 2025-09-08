@@ -1,0 +1,7 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.faq-section{
+    padding: 0;
+    background-color: $gray-200;
+}

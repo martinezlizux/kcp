@@ -1,0 +1,59 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.carousel-section{
+
+    .c-item{
+        height: 25rem;
+
+        img{
+            
+
+            // full height
+            height: 100%;
+        }
+        
+    }
+
+
+    @include media-breakpoint-up(md) { 
+        .c-item{
+            height: 40rem ;
+        }
+
+    }
+    
+    .c-img{
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(1);
+
+    }
+
+    .carousel-text{
+        position: absolute;
+        right: 15%;
+        top: 25%;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        text-align: left;
+        color: $white;
+        
+       
+
+    }
+
+    // efecto blur
+
+    .bg-blur {
+        // filter: blur(3px);
+        // -webkit-filter: blur(3px);
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+       
+
+    }
+        
+
+}

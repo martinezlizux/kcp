@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.services-section{
+    padding: 10rem 0 0 0 ;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-banner{
+    
+    display: flex;
+   justify-content: center;
+   
+   img{
+    width: 400px;
+    height: auto;
+   }
+}

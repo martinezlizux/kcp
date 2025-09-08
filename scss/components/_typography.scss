@@ -1,0 +1,51 @@
+@use '../custom' as *;
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+    &--intro{
+        display: inline-block;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    &--description{
+        font-size: 1.2rem;
+        font-weight: 300;
+        display: block;
+    }
+}
+
+.display-4{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.txt{
+    &-primary{ color: $primary;}
+    &-secondary{ color: $secondary;}
+    &-success{ color: $esmerald;}
+    &-dark{color: $blue-dark;}
+
+}
+
+// Headingline
+
+.heading-line::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+.heading-line::after{
+    content: "";
+    width: 2rem;
+    padding-top: 0.5rem;
+    height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
