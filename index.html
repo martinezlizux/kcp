@@ -910,6 +910,17 @@
               event.target.classList.add('active');
             });
           });
+
+          // Initialize Bootstrap carousel with automatic slide change every 5 seconds
+          document.addEventListener('DOMContentLoaded', function() {
+            var myCarousel = document.querySelector('#carouselExample');
+            if (myCarousel) {
+              var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 5000, // 5000 ms = 5 seconds
+                ride: 'carousel'
+              });
+            }
+          });
         </script>
 
         <!-- <section id="footer" class="footer-section">
@@ -1028,3 +1039,6 @@
                             </h6>
                             <!-- Facebook -->
                             <p><a href="https://www.facebook.com/profile.php?id=100063655596997" target="_blank" rel="noopener noreferrer"><!-- ... --></a></p>
+
+        <!-- Added Bootstrap JS Bundle before closing body tag -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
